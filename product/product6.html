@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intel® Core Ultra 7</title>
+    <link rel="stylesheet" href="../CSS/product.css"> <!-- Connect the external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Products</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About us.html">About</a></li>
+                <li><a href="../games.html">Games</a></li>
+                <li><a href="../upcoming.html">Upcoming</a></li>
+                <li><a href="../consoles.html">Consoles</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Cart Icon -->
+        <a href="../cart.html">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </a>
+
+        <a href="../favorite.html">
+            <div class="favorites-icon">
+              <i class="fas fa-heart"></i>
+              <span id="favorites-count">0</span>
+            </div>
+          </a>
+    </header>
+    
+    <main>
+        <!-- PRODUCT DISPLAY SECTION -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../image/pro6.png" alt="Intel® Core Ultra 7">
+                <div class="product-info">
+                    <p class="price">124,000 LKR</p>
+                    <div class="button-group">
+                        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'Intel® Core Ultra 7', 124000)">Add to Cart</button>
+                        <div class="quantity-controls">
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+                          <input type="text" class="qty-input" value="1" readonly>
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h2>Intel® Core Ultra 7 Processor 265K</h2>
+                <p class="category">Category: Processor</p>
+                <p class="availability">Availability: <span class="in-stock">In Stock</span></p>
+                <p><strong>Brand:</strong> Intel</p>
+                <p><strong>What's Included:</strong></p>
+                <ul>
+                     <li>Total Cores 20</li>
+                     <li># of Performance-cores8</li>
+                     <li># of Efficient-cores12</li>
+                     <li>Total Threads 20</li>
+                     <li>Max Turbo Frequency 5.5 GHz</li>
+                     <li>Intel® Turbo Boost Max Technology 3.0 Frequency ‡ 5.5</li>
+                     <li> Performance-core Max Turbo Frequency 5.4 GHz</li>
+                     <li>Efficient-core Max Turbo Frequency 4.6 GHz</li>
+                     <li>Performance-core Base Frequency 3.9 GHz</li>
+                     <li>Efficient-core Base Frequency 3.3 GHz</li>
+                     <li>Cache 30 MB Intel® Smart Cache</li>
+                     <li>Total L2 Cache36 MB</li>
+                     <li>Processor Base Power 125 W</li>
+                     <li>Maximum Turbo Power 250 W</li>
+                     <li>Intel® Deep Learning Boost (Intel® DL Boost) on CPU Yes</li>
+                     <li>AI Software Frameworks Supported by CPUOpenVINO™, WindowsML, DirectML, ONNX RT, WebNN</li>
+                </ul>
+                <p><strong>Warranty:</strong> 3 Year</p>
+
+                <p class="description">
+                    The Intel® Core Ultra 7 265K is a 20-core, 20-thread processor with boost 
+                    speeds up to 5.5GHz. Built on a 3nm process, it features 30MB Smart Cache, 
+                    Intel Xe graphics, PCIe 5.0, and DDR5 support, delivering strong performance 
+                    for gaming and productivity. With AI-powered enhancements and efficient power 
+                    management, it’s ideal for high-performance computing.
+                </p>
+            </div>
+        </div>
+        <!-- END OF PRODUCT DISPLAY SECTION -->
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><i class="fa fa-phone"></i> +94 77 744 1420</p>
+                <p><i class="fa fa-envelope"></i> gaming4world@gmail.com</p>
+                <p><i class="fa fa-globe"></i> <a href="https://ganidusasmitha.github.io/gaming4world/About%20us.html" target="_blank">www.gaming4world.com</a></p>
+            </div>
+            <div class="footer-logo">
+                <img src="../image/logo 1.png" alt="Gaming 4 World Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Java/cart.js" defer></script>
+    <script src="../Java/favorite.js"></script>
+</body>
+</html>

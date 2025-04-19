@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="./CSS/cart.css">
+    <style>
+        .payment-container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h2{
+            color: black;
+        }
+
+        .payment-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .payment-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px;
+            border-radius: 10px;
+            border: 1px solid #aaa;
+        }
+        .payment-btn {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .payment-btn:hover {
+            background-color: #218838;
+        }
+
+        /* ... existing styles ... */
+
+    @media (max-width: 480px) {
+        body {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .payment-container {
+            margin: 20px 10px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .payment-container h2 {
+            font-size: 20px;
+        }
+
+        .payment-container input {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .payment-btn {
+            padding: 10px;
+            font-size: 15px;
+        }
+    }
+    </style>
+</head>
+<body>
+
+<div class="payment-container">
+    <h2>Payment Information</h2>
+    <form id="payment-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Card Number" required />
+        <input type="text" placeholder="Contact Number" required />
+        <input type="text" placeholder="Address" required />
+        <input type="text" placeholder="Postal Code" required />
+        <input type="text" placeholder="MM/YY" required />
+        <input type="text" placeholder="CVV" required />
+        <button class="payment-btn" type="submit">Confirm Payment</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("payment-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+    
+        const inputs = document.querySelectorAll("#payment-form input");
+        const [fullName, email, cardNumber, contactNumber, address, postalCode, expiry, cvv] = [...inputs].map(i => i.value.trim());
+    
+        const cardRegex = /^\d{16}$/;
+        const cvvRegex = /^\d{3}$/;
+        const expiryRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const phoneRegex = /^\d{10,15}$/;
+        const postalRegex = /^\d{3,10}$/;
+    
+        if (!fullName || !email || !cardNumber || !contactNumber || !address || !postalCode || !expiry || !cvv) {
+            alert("! Please fill in all the fields.");
+            return;
+        }
+    
+        if (!emailRegex.test(email)) {
+            alert("! Invalid email address.");
+            return;
+        }
+    
+        if (!cardRegex.test(cardNumber)) {
+            alert("! Card number must be 16 digits.");
+            return;
+        }
+    
+        if (!cvvRegex.test(cvv)) {
+            alert("! CVV must be 3 digits.");
+            return;
+        }
+    
+        if (!expiryRegex.test(expiry)) {
+            alert("! Expiry must be in MM/YY format.");
+            return;
+        }
+    
+        if (!phoneRegex.test(contactNumber)) {
+            alert("! Contact number must be digits only.");
+            return;
+        }
+    
+        if (!postalRegex.test(postalCode)) {
+            alert("! code must be digits.");
+            return;
+        }
+    
+        //  If all checks pass
+        localStorage.removeItem("cart");
+    
+        alert(" ✅ Payment successful! Thank you for your order. Your order will be shipped in 3 days.");
+        window.location.href = "consoles.html";
+    });
+    </script>
+    
+
+</body>
+</html>

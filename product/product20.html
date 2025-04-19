@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORSAIR DOMINATOR TITANIUM RGB DDR5 6000MHZ</title>
+    <link rel="stylesheet" href="../CSS/product.css"> <!-- Connect the external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Products</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About us.html">About</a></li>
+                <li><a href="../games.html">Games</a></li>
+                <li><a href="../upcoming.html">Upcoming</a></li>
+                <li><a href="../consoles.html">Consoles</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Cart Icon -->
+        <a href="../cart.html">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </a>
+
+        <a href="../favorite.html">
+            <div class="favorites-icon">
+              <i class="fas fa-heart"></i>
+              <span id="favorites-count">0</span>
+            </div>
+          </a>
+    </header>
+    
+    <main>
+        <!-- PRODUCT DISPLAY SECTION -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../image/me.png" alt="CORSAIR DOMINATOR TITANIUM RGB DDR5 6000MHZ">
+                <div class="product-info">
+                    <p class="price">61,500 LKR</p>
+                    <div class="button-group">
+                        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'CORSAIR DOMINATOR TITANIUM RGB DDR5 6000MHZ', 61500)">Add to Cart</button>
+                        <div class="quantity-controls">
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+                          <input type="text" class="qty-input" value="1" readonly>
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h2>CORSAIR DOMINATOR TITANIUM RGB DDR5 6000MHZ</h2>
+                <p class="category">Category: Memory</p>
+                <p class="availability">Availability: <span class="in-stock">In Stock</span></p>
+                <p><strong>Brand:</strong> DOMINATOR</p>
+                <p><strong>What's Included:</strong></p>
+                <ul>
+                     <li>Heat Spreader: Aluminum</li>
+                        <li>LED Lighting RGB</li>
+                        <li>Memory Series DOMINATOR TITANIUM</li>
+                        <li>Memory Size 16GB</li>
+                        <li>Performance Profile EXPO & XMP</li>
+                        <li>SPD Speed 4800MHz</li>
+                        <li>Tested Latency 30-36-36-76</li>                      
+                        <li> Speed (Up To) 6000</li>                       
+                        <li>Fan Included No</li>                       
+                        <li> Memory Color GREY</li>                       
+                        <li>Memory Compatibility AMD 600 Series, Intel 600 Series, Intel 700 Series</li>                       
+                        <li>Memory Detail Compatibility AMD 600 Series, Intel 600 Series, Intel 700 Series</li>                       
+                        <li>Memory Type DDR5</li>
+                </ul>
+                <p><strong>Warranty:</strong> 10 Year</p>
+
+                <p class="description">
+                    ​The CORSAIR DOMINATOR TITANIUM RGB DDR5 6000MHz is a premium memory kit 
+                    available in 32GB (2x16GB) and 64GB (2x32GB) configurations, designed for 
+                    high-performance computing. It features a sleek die-cast aluminum heat spreader 
+                    and customizable RGB lighting, compatible with CORSAIR's iCUE software. Supporting 
+                    both AMD EXPO and Intel XMP profiles, it ensures seamless integration with a variety 
+                    of systems. With a CAS latency of CL30 and operating at 1.40V, this memory kit offers 
+                    both speed and efficiency. Its robust construction and advanced lighting design make it 
+                    an excellent choice for gamers and PC enthusiasts seeking both performance and aesthetics.
+                </p>
+            </div>
+        </div>
+        <!-- END OF PRODUCT DISPLAY SECTION -->
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><i class="fa fa-phone"></i> +94 77 744 1420</p>
+                <p><i class="fa fa-envelope"></i> gaming4world@gmail.com</p>
+                <p><i class="fa fa-globe"></i> <a href="https://ganidusasmitha.github.io/gaming4world/About%20us.html" target="_blank">www.gaming4world.com</a></p>
+            </div>
+            <div class="footer-logo">
+                <img src="../image/logo 1.png" alt="Gaming 4 World Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Java/cart.js" defer></script>
+    <script src="../Java/favorite.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMD Ryzen 7 9700X</title>
+    <link rel="stylesheet" href="../CSS/product.css"> <!-- Connect the external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Products</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About us.html">About</a></li>
+                <li><a href="../games.html">Games</a></li>
+                <li><a href="../upcoming.html">Upcoming</a></li>
+                <li><a href="../consoles.html">Consoles</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Cart Icon -->
+        <a href="../cart.html">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </a>
+
+        <a href="../favorite.html">
+            <div class="favorites-icon">
+              <i class="fas fa-heart"></i>
+              <span id="favorites-count">0</span>
+            </div>
+          </a>
+    </header>
+    
+    <main>
+        <!-- PRODUCT DISPLAY SECTION -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../image/pro5.png" alt="AMD Ryzen 7 9700XARD">
+                <div class="product-info">
+                    <p class="price">125,000 LKR</p>
+                    <div class="button-group">
+                        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'AMD Ryzen 7 9700XARD ', 125000)">Add to Cart</button>
+                        <div class="quantity-controls">
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+                          <input type="text" class="qty-input" value="1" readonly>
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h2>AMD Ryzen 7 9700X (up to 5.5Ghz 8-cores 16-threads) 32M Cache</h2>
+                <p class="category">Category: Processor</p>
+                <p class="availability">Availability: <span class="out-of-stock">Out of Stock</span></p>
+                <p><strong>Brand:</strong> Ryzen</p>
+                <p><strong>Specifications:</strong></p>
+                <ul>
+                    <li>CPU Socket: AM5</li>
+                    <li>Supporting Chipsets: A620 , X670E , X670 , B650E , B650, X870E , X870</li>
+                    <li>CPU Boost Technology: Precision Boost 2</li>
+                    <li>Instruction Set x86-64</li>
+                    <li>Supported Extensions: AES , AMD-V , AVX , AVX2 , AVX512 , FMA3 , MMX-plus , SHA , SSE , SSE2 , SSE3 , SSE4.1 , SSE4.2 , SSE4A , SSSE3 , x86-64</li>
+                    <li>Thermal Solution (PIB): Not Included</li>
+                    <li>Recommended Cooler: Premium air cooler recommended for optimal performance</li>
+                    <li>Max. Operating Temperature (Tjmax): 95°C</li>
+                    <li>Launch Date: 08/08/2024</li>
+                    <li>OS Support: Windows 11 - 64-Bit Edition , Windows 10 - 64-Bit Edition , RHEL x86 64-Bit , Ubuntu x86 64-Bit</li>
+                </ul>
+                <p><strong>Warranty:</strong> 3 Years</p>
+
+                <p class="description">
+                    The AMD Ryzen 7 9700X is a powerful 8-core, 16-thread processor with boost 
+                    speeds up to 5.5GHz. Built on the Zen 5 architecture, it features 32MB of L3 
+                    cache, offering excellent gaming and multitasking performance. With PCIe 5.0 
+                    and DDR5 support, it delivers high efficiency and next-gen computing power.
+                </p>
+            </div>
+        </div>
+        <!-- END OF PRODUCT DISPLAY SECTION -->
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><i class="fa fa-phone"></i> +94 77 744 1420</p>
+                <p><i class="fa fa-envelope"></i> gaming4world@gmail.com</p>
+                <p><i class="fa fa-globe"></i> <a href="https://ganidusasmitha.github.io/gaming4world/About%20us.html" target="_blank">www.gaming4world.com</a></p>
+            </div>
+            <div class="footer-logo">
+                <img src="../image/logo 1.png" alt="Gaming 4 World Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Java/cart.js" defer></script>
+    <script src="../Java/favorite.js"></script>
+</body>
+</html>

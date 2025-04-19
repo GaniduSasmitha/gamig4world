@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSI GeForce RTX 5070</title>
+    <link rel="stylesheet" href="../CSS/product.css"> <!-- Connect the external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Products</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About us.html">About</a></li>
+                <li><a href="../games.html">Games</a></li>
+                <li><a href="../upcoming.html">Upcoming</a></li>
+                <li><a href="../consoles.html">Consoles</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Cart Icon -->
+        <a href="../cart.html">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </a>
+
+        <a href="../favorite.html">
+            <div class="favorites-icon">
+              <i class="fas fa-heart"></i>
+              <span id="favorites-count">0</span>
+            </div>
+          </a>
+    </header>
+    <main>
+        <!-- PRODUCT DISPLAY SECTION -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../image/gra5.png" alt="MSI GeForce RTX 5070">
+                <div class="product-info">
+                    <p class="price">250,000 LKR</p>
+                    <div class="button-group">
+                        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'MSI GeForce RTX 5070', 250000)">Add to Cart</button>
+                        <div class="quantity-controls">
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+                          <input type="text" class="qty-input" value="1" readonly>
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h2>MSI GeForce RTX 5070</h2>
+                <p class="category">Category: Graphic Card</p>
+                <p class="availability">Availability: <span class="in-stock">In Stock</span></p>
+                <p><strong>Brand:</strong> MSI</p>
+                <p><strong>What's Included:</strong></p>
+                <ul>
+                     <li>Model Name G5070-12V2C</li>
+                     <li>Graphics Processing Unit NVIDIA®</li>
+                     <li>GeForce RTX™ 5070</li>
+                     <li>Interface PCI Express®</li>
+                     <li>Gen 5</li>
+                     <li>Core Clocks</li>
+                     <li>Extreme Performance: 2557 MHz (MSI Center)</li>
+                     <li>Boost: 2542 MHz</li>
+                     <li>CUDA®</li>
+                     <li>CORES 6144 Units</li>
+                     <li>Memory Speed 28 Gbps</li>
+                     <li>Memory 12GB GDDR7</li>
+                     <li>Memory Bus 192-bit</li>
+                </ul>
+                <p><strong>Warranty:</strong> 3 Year</p>
+
+                <p class="description">
+                    ​The MSI GeForce RTX 5070 12G VENTUS 2X OC is a powerful graphics 
+                    card built on NVIDIA's Blackwell architecture, featuring 12GB of 
+                    high-speed GDDR7 memory and 6144 CUDA cores. It offers a boost clock 
+                    of up to 2542 MHz and utilizes a dual-fan TORX Fan 5.0 cooling system with 
+                    Zero Frozr technology for efficient and quiet cooling. The card supports PCIe
+                     5.0, includes three DisplayPort 2.1b ports and one HDMI 2.1b port, and is 
+                     capable of delivering up to 8K resolution at 120Hz with HDR and VRR. With a 
+                     power consumption of 250W, MSI recommends a 650W power supply for optimal performance.
+                </p>
+            </div>
+        </div>
+        <!-- END OF PRODUCT DISPLAY SECTION -->
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><i class="fa fa-phone"></i> +94 77 744 1420</p>
+                <p><i class="fa fa-envelope"></i> gaming4world@gmail.com</p>
+                <p><i class="fa fa-globe"></i> <a href="https://ganidusasmitha.github.io/gaming4world/About%20us.html" target="_blank">www.gaming4world.com</a></p>
+            </div>
+            <div class="footer-logo">
+                <img src="../image/logo 1.png" alt="Gaming 4 World Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Java/cart.js" defer></script>
+    <script src="../Java/favorite.js"></script>
+</body>
+</html>

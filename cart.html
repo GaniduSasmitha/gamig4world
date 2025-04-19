@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./CSS/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Shopping Cart</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About us.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+            <!-- Cart Icon with Link -->
+            <a href="cart.html">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </a>
+    
+            <!-- Favorites Icon with Link -->
+    <a href="favorite.html">
+        <div class="favorites-icon">
+            <i class="fas fa-heart"></i>
+            <span id="favorites-count">0</span>
+        </div>
+    </a>
+</header>
+
+<main>
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Products added to cart will be displayed here -->
+        </div>
+      <h3><p id="cart-total">Total: LKR</p></h3> 
+
+        <div class="cart-actions">
+            <button class="checkout-btn add-fav-btn" id="add-fav-to-cart">
+                <i class="fas fa-heart"></i> Add Favorite Items to Cart
+            </button>
+            <button class="checkout-btn pay-online" id="pay-online-btn">
+                Pay Online
+            </button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="footer-contact">
+
+            <p><i class="fa fa-phone"></i> +94 77 744 1420</p>
+            <p><i class="fa fa-envelope"></i> gaming4world@gmail.com</p>
+            <p><i class="fa fa-globe"></i> <a href="https://ganidusasmitha.github.io/gaming4world/About%20us.html" target="_blank">www.gaming4world.com</a></p>
+        </div>
+
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <img src="./image/logo 1.png" alt="Gaming 4 world Logo">
+        </div>
+    </div>
+</footer>
+
+<script src="./Java/cart.js"></script>
+<script src="./Java/favorite.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

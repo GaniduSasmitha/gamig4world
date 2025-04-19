@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+}
+
+h1 {
+    text-align: center; 
+    margin-top: 0; /* Removes default top margin */
+    padding-top: 20px; /* Optional: Adds some space from the top */
+    font-family: Arial, sans-serif; 
+    font-size: 4rem; 
+    color: #ed7710e0; 
+}
+
+header {
+    background-color: #211c1c;
+    color: rgb(242, 238, 238);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(223, 221, 217);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    text-align: center;
+    padding: 0px;
+    font-size: x-large;
+}
+
+#img {
+    width: 100%;
+    height: 600px;
+}
+
+/* Discover Section */
+.discover-section {
+    padding: 40px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.discover-section h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.game-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20x;
+}
+
+.game-card {
+    background-color: #262424;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 300px;
+    max-width: 400px;
+    flex-shrink: 0;
+    text-align: center;
+    
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+}
+
+.game-details {
+    padding: 10px;
+}
+
+.game-title {
+    font-size: 30px;
+    color: #b7d4e6;
+    margin: px;
+    font-weight: bold;
+}
+
+.game-type {
+    font-size: 20px; 
+}
+
+.game-price {
+    font-size: 14px;
+    margin: 5px 0 0;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2d2c2c; 
+    padding: 10px ;
+    font-family: Arial, sans-serif;
+    color: #f7f2f2;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contact p {
+    margin: 8px 0;
+    font-size:20x;
+}
+
+.footer-logo img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+   
+    /* Header */
+    header h1 {
+        font-size: 1.5rem; 
+        padding-top: 10px;
+    }
+
+    nav ul {
+        justify-content: space-around; /* Reduce spacing for nav items */
+        padding: 5px 0; 
+    }
+
+    nav ul li {
+        margin: 0 10px; 
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    main {
+        font-size: small;
+    }
+
+    #img {
+        height: 300px; 
+    }
+
+    .discover-section {
+        padding: 20px;
+    }
+
+    .discover-section h2 {
+        font-size: medium;
+    }
+
+    .game-grid {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .game-card {
+        min-width: 100%;
+    }
+
+    .game-title {
+        font-size: 17px;
+    }
+
+    .game-type {
+        font-size: 15px;
+    }
+
+    .game-price {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack footer content vertically */
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .footer-contact p {
+        font-size: 1rem; 
+    }
+
+    .footer-logo img {
+        max-width: 150px; 
+    }
+}
+
+
+

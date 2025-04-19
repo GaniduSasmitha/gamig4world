@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consoles</title>
+  <link rel="stylesheet" href="./CSS/consoles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Consoles</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About us.html">About</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="upcoming.html">Upcoming</a></li>
+        <li><a href="consoles.html">Consoles</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <a href="cart.html">
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </a>
+
+    <a href="favorite.html">
+      <div class="favorites-icon">
+        <i class="fas fa-heart"></i>
+        <span id="favorites-count">0</span>
+      </div>
+    </a>
+  </header>
+
+  <main>
+    <p>
+      Explore our extensive collection of state-of-the-art gaming consoles,
+      premium peripherals, and must-have accessories crafted to enhance and
+      redefine your gaming experience.
+    </p>
+  </main>
+  <h2>Processors</h2>
+  <div class="product-section">
+    <!-- Product 1.1 -->
+    <div class="product-card">
+      <a href="./product/product1.html" class="product-link">
+        <img src="./image/pro1.png" alt="AMD Ryzen™ 9 9950X3D">
+        <h3>AMD Ryzen™ 9 9950X3D</h3>
+        <p>- Processor -</p>
+        <p class="price">254,000 LKR</p>
+        <div class="status in-stock">In Stock</div>
+      </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'AMD Ryzen™ 9 9950X3D', 254000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('AMD Ryzen™ 9 9950X3D', './image/pro1.png', 254000, this)">❤ Favorite</button>
+      </div>
+    </div>
+  
+    <!-- Product 1.2 -->
+    <div class="product-card">
+      <a href="./product/product2.html" class="product-link">
+        <img src="./image/pro2.png" alt="AMD Ryzen 7 9800X3D">
+        <h3>AMD Ryzen 7 9800X3D</h3>
+        <p>- Processor -</p>
+        <p class="price">197,000 LKR</p>
+        <div class="status in-stock">In Stock</div>
+      </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'AMD Ryzen 7 9800X3D', 197000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('AMD Ryzen 7 9800X3D', './image/pro2.png', 197000, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+    <!-- Product 1.3 -->
+    <div class="product-card">
+      <a href="./product/product3.html" class="product-link">
+        <img src="./image/pro3.png" alt="Intel® Core Ultra 9">
+        <h3>Intel® Core Ultra 9</h3>
+        <p>- Processor -</p>
+        <p class="price">194,000 LKR</p>
+        <div class="status out-of-stock">Out of Stock</div>
+      </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'Intel® Core Ultra 9', 194000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('Intel® Core Ultra 9', './image/pro3.png', 194000, this)">❤ Favorite</button>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="product-section">
+        <!-- Product 1.4 -->
+        <div class="product-card">
+            <a href="./product/product4.html" class="product-link">
+            <img src="./image/pro4.png" alt="AMD Ryzen 9 9950X2024">
+            <h3>AMD Ryzen 9 9950X</h3>
+            <p>- Processor -</p>
+            <p class="price">232,000 LKR</p>
+            <div class="status in-stock">In Stock</div>
+        </a>
+        <div class="button-group">
+          <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'AMD Ryzen 9 9950X2024', 232000)">Add to Cart</button>
+          <div class="quantity-controls">
+            <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+            <input type="text" class="qty-input" value="1" readonly>
+            <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+          </div>
+        </div>
+        <div class="favorite-group">
+          <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('AMD Ryzen 9 9950X2024', './image/pro4.png', 232000, this)">❤ Favorite</button>
+        </div>
+      </div>
+
+        <!-- Product 1.5 -->
+        <div class="product-card">
+            <a href="./product/product5.html" class="product-link">
+            <img src="./image/pro5.png" alt="AMD Ryzen 7 9700XARD">
+            <h3>AMD Ryzen 7 9700XARD</h3>
+            <p>- Processor -</p>
+            <p class="price">125,000 LKR</p>
+            <div class="status out-of-stock">Out of Stock</div>
+        </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'AMD Ryzen 7 9700XARD', 125000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('AMD Ryzen 7 9700XARD', './image/pro5.png', 125000, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+        <!-- Product 1.6 -->
+
+        <div class="product-card">
+            <a href="./product/product6.html" class="product-link">
+            <img src="./image/pro6.png" alt="Intel® Core Ultra 7">
+            <h3>Intel® Core Ultra 7</h3>
+            <p>- Processor -</p>
+            <p class="price">124,000 LKR</p>
+            <div class="status in-stock">In Stock</div>
+          </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'Intel® Core Ultra 7', 124000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('Intel® Core Ultra 7', './image/pro6.png', 124000, this)">❤ Favorite</button>
+      </div>
+    </div>
+  </div>
+
+<h2>Graphic Cards</h2>
+        <!-- Product Section 2 -->
+
+        <div class="product-section">
+            <!-- Product 2.1 -->
+            <div class="product-card">
+                <a href="./product/product7.html" class="product-link">
+                <img src="./image/gra1.png" alt="ZOTAC GAMING GeForce RTX 5070">
+                <h3>ZOTAC GAMING GeForce RTX 5070</h3>
+                <p>- Graphic Card -</p>
+                <p class="price">250,000 LKR</p>
+                <div class="status in-stock">In Stock</div>
+                </a>           
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'ZOTAC GAMING GeForce RTX 5070', 250000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('ZOTAC GAMING GeForce RTX 5070', './image/gra1.png', 250000, this)">❤ Favorite</button>
+      </div>
+    </div>
+    
+            <!-- Product 2.2 -->
+            <div class="product-card">
+                <a href="./product/product8.html" class="product-link">
+                <img src="./image/gra2.png" alt="ZOTAC GAMING GeForce RTX 5070 TI">
+                <h3>ZOTAC GAMING GeForce RTX 5070 TI</h3>
+                <p>- Graphic Card -</p>
+                <p class="price">335,000 LKR</p>
+                <div class="status in-stock">In Stock</div>
+                </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'ZOTAC GAMING GeForce RTX 5070 TI', 335000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('ZOTAC GAMING GeForce RTX 5070 TI', './image/gra2.png', 335000, this)">❤ Favorite</button>
+      </div>
+    </div>
+  
+    
+            <!-- Product 2.3 -->
+            <div class="product-card">
+                <a href="./product/product9.html" class="product-link">
+                <img src="./image/gra3.png" alt="ZOTAC GAMING GeForce RTX 5070 TI AMP">
+                <h3>ZOTAC GAMING GeForce RTX 5070 TI AMP</h3>
+                <p>- Graphic Card -</p>
+                <p class="price">372,000 LKR</p>
+                <div class="status out-of-stock">Out of Stock</div>
+                </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'ZOTAC GAMING GeForce RTX 5070 TI AMP', 372000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('ZOTAC GAMING GeForce RTX 5070 TI AMP', './image/gra3.png', 372000, this)">❤ Favorite</button>
+      </div>
+    </div>
+  </div>
+
+        
+    <div class="product-section">
+        <!-- Product 2.4 -->
+        <div class="product-card">
+            <a href="./product/product10.html" class="product-link">
+            <img src="./image/gra4.png" alt="MSI Geforce RTX 5080">
+            <h3>MSI Geforce RTX 5080</h3>
+            <p>- Graphic Card -</p>
+            <p class="price">560,000 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'MSI Geforce RTX 5080', 560000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('MSI Geforce RTX 5080', './image/gra4.png', 560000, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+        <!-- Product 2.5 -->
+        <div class="product-card">
+            <a href="./product/product11.html" class="product-link">
+            <img src="./image/gra5.png" alt="MSI GeForce RTX 5070">
+            <h3>MSI GeForce RTX 5070</h3>
+            <p>- Graphic Card -</p>
+            <p class="price">250,000 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'MSI GeForce RTX 5070', 250000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('MSI GeForce RTX 5070', './image/gra5.png', 250000, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+        <!-- Product 2.6 -->
+        <div class="product-card">
+            <a href="./product/product12.html" class="product-link">
+            <img src="./image/gra6.png" alt="MSI Geforce RTX 5080">
+            <h3>MSI Geforce RTX 5080</h3>
+            <p>- Graphic Card -</p>
+            <p class="price">455,000 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'MSI Geforce RTX 5080', 455000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('MSI Geforce RTX 5080', './image/gra6.png', 455000, this)">❤ Favorite</button>
+      </div>
+    </div>
+  </div>
+
+        <!-- Product Section 3 -->
+<h2>Motherboads</h2>
+        <div class="product-section">
+            <!-- Product 3.1 -->
+            <div class="product-card">
+                <a href="./product/product13.html" class="product-link">
+                <img src="./image/mo1.png" alt="MSI Z790 PROJECT ZERO">
+                <h3>MSI Z790 PROJECT ZERO</h3>
+                <p>- Motherboads -</p>
+                <p class="price">119,000 LKR</p>
+                <div class="status in-stock">In Stock</div>
+                </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'MSI Z790 PROJECT ZERO', 119000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('MSI Z790 PROJECT ZERO', './image/mo1.png', 119000, this)">❤ Favorite</button>
+      </div>
+    </div>
+    
+            <!-- Product 3.2 -->
+            <div class="product-card">
+                <a href="./product/product14.html" class="product-link">
+                <img src="./image/mo2.png" alt="COLORFUL CVN Z790D5">
+                <h3>COLORFUL CVN Z790D5</h3>
+                <p>- Motherboads -</p>
+                <p class="price">69,000 LKR</p>
+                <div class="status in-stock">In Stock</div>
+                </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'COLORFUL CVN Z790D5', 69000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('COLORFUL CVN Z790D5', './image/mo2.png', 69000, this)">❤ Favorite</button>
+      </div>
+    </div>
+    
+            <!-- Product 3.3-->
+            <div class="product-card">
+                <a href="./product/product15.html" class="product-link">
+                <img src="./image/mo3.png" alt="COLORFUL CVN B650">
+                <h3>COLORFUL CVN B650</h3>
+                <p>- Motherboads -</p>
+                <p class="price">49,000 LKR</p>
+                <div class="status in-stock">In Stock</div>
+              </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'COLORFUL CVN B650', 49000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('COLORFUL CVN B650', './image/mo3.png', 49000, this)">❤ Favorite</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="product-section">
+        <!-- Product 3.4 -->
+        <div class="product-card">
+            <a href="./product/product13.html" class="product-link">
+            <img src="./image/mo4.png" alt="MSI MAG X870E TOMAHAWK WIFI">
+            <h3>MSI MAG X870E TOMAHAWK WIFI</h3>
+            <p>- Motherboads -</p>
+            <p class="price">146,000 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'MSI MAG X870E TOMAHAWK WIFI', 146000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('MSI MAG X870E TOMAHAWK WIFI', './image/mo4.png', 146000, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+        <!-- Product 3.5 -->
+        <div class="product-card">
+            <a href="./product/product14.html" class="product-link">
+            <img src="./image/mo5.png" alt="MSI Pro B760M-A WIFI DDR5">
+            <h3>MSI Pro B760M-A WIFI DDR5</h3>
+            <p>- Motherboads -</p>
+            <p class="price">59,500 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'MSI Pro B760M-A WIFI DDR5', 59500)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('MSI Pro B760M-A WIFI DDR5', './image/mo5.png', 59500, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+        <!-- Product 3.6 -->
+        <div class="product-card">
+            <a href="./product/product15.html" class="product-link">
+            <img src="./image/mo6.png" alt="MSI MAG X870 TOMAHAWK WIFI">
+            <h3>MSI MAG X870 TOMAHAWK WIFI</h3>
+            <p>- Motherboads -</p>
+            <p class="price">144,500 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'MSI MAG X870 TOMAHAWK WIFI', 144500)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('MSI MAG X870 TOMAHAWK WIFI', './image/pro1.png', 144500, this)">❤ Favorite</button>
+      </div>
+    </div>
+  </div>
+    
+        <!-- Product Section 4 -->
+        <h2>Memories</h2>
+        <div class="product-section">
+            <!-- Product 4.1 -->
+            <div class="product-card">
+                <a href="./product/product19.html" class="product-link">
+                <img src="./image/me1.png" alt="CORSAIR DOMINATOR TITANIUM RGB 64GB">
+                <h3>CORSAIR DOMINATOR TITANIUM RGB 64GB</h3>
+                <p>- Memory -</p>
+                <p class="price">105,000 LKR</p>
+                <div class="status out-of-stock">Out of Stock</div>
+                </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'CORSAIR DOMINATOR TITANIUM RGB 64GB', 105000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('CORSAIR DOMINATOR TITANIUM RGB 64GB', './image/me1.png', 105000, this)">❤ Favorite</button>
+      </div>
+    </div>
+    
+            <!-- Product 4.2 -->
+            <div class="product-card">
+                <a href="./product/product20.html" class="product-link">
+                <img src="./image/me.png" alt="CORSAIR DOMINATOR TITANIUM RGB DDR5 6000MHZ">
+                <h3>CORSAIR DOMINATOR TITANIUM RGB DDR5 6000MHZ</h3>
+                <p>- Memory -</p>
+                <p class="price">61,500 LKR</p>
+                <div class="status in-stock">In Stock</div>
+                </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'CORSAIR DOMINATOR TITANIUM RGB DDR5 6000MHZ', 61500)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('CORSAIR DOMINATOR TITANIUM RGB DDR5 6000MHZ', './image/me.png', 61500, this)">❤ Favorite</button>
+      </div>
+    </div>
+    
+            <!-- Product 4.3-->
+            <div class="product-card">
+                <a href="./product/product21.html" class="product-link">
+                <img src="./image/me3.png" alt="CORSAIR VENGEANCE RGB DDR5 6000MHZ">
+                <h3>CORSAIR VENGEANCE RGB DDR5 6000MHZ</h3>
+                <p>- Memory -</p>
+                <p class="price">85,000 LKR</p>
+                <div class="status in-stock">In Stock</div>
+                </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'CORSAIR VENGEANCE RGB DDR5 6000MHZ', 85000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('CORSAIR VENGEANCE RGB DDR5 6000MHZ', './image/me3.png', 85000, this)">❤ Favorite</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="product-section">
+        <!-- Product 4.4 -->
+        <div class="product-card">
+            <a href="./product/product19.html" class="product-link">
+            <img src="./image/me4.png" alt="CORSAIR VENGEANCE DDR5 5600MHz">
+            <h3>CORSAIR VENGEANCE DDR5 5600MHz</h3>
+            <p>- Memory -</p>
+            <p class="price">17,500 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'CORSAIR VENGEANCE DDR5 5600MHz', 17500)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('CORSAIR VENGEANCE DDR5 5600MHz', './image/me4.png', 17500, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+        <!-- Product 4.5 -->
+        <div class="product-card">
+            <a href="./product/product20.html" class="product-link">
+            <img src="./image/me5.png" alt="Corsair Vengeance LPX DDR4 3200Mhz">
+            <h3>Corsair Vengeance LPX DDR4 3200Mhz</h3>
+            <p>- Memory -</p>
+            <p class="price">7,500 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'Corsair Vengeance LPX DDR4 3200Mhz', 7500)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('Corsair Vengeance LPX DDR4 3200Mhz', './image/me5.png', 7500, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+        <!-- Product 4.6 -->
+        <div class="product-card">
+            <a href="./product/product21.html" class="product-link">
+            <img src="./image/me6.png" alt="TEAM TFORCE DELTA RGB 6000MHZ">
+            <h3>TEAM TFORCE DELTA RGB 6000MHZ</h3>
+            <p>- Memory -</p>
+            <p class="price">75,000 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'TEAM TFORCE DELTA RGB 6000MHZ', 75000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('TEAM TFORCE DELTA RGB 6000MHZ', './image/me6.png', 75000, this)">❤ Favorite</button>
+      </div>
+    </div>
+  </div>
+
+    
+        <!-- Product Section 5 -->
+        <h2>Storages</h2>
+        <div class="product-section">
+            <!-- Product 5.1 -->
+            <div class="product-card">
+                <a href="./product/product25.html" class="product-link">
+                <img src="./image/st1.png" alt="SAMSUNG 990 PRO PCIe 4.0 NVMe SSD 2TB">
+                <h3>SAMSUNG 990 PRO PCIe 4.0 NVMe SSD 2TB</h3>
+                <p>- Storage -</p>
+                <p class="price">54,500 LKR</p>
+                <div class="status in-stock">In Stock</div>
+                </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'SAMSUNG 990 PRO PCIe 4.0 NVMe SSD 2TB', 54500)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('SAMSUNG 990 PRO PCIe 4.0 NVMe SSD 2TB', './image/st1.png', 54500, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+            <!-- Product 5.2 -->
+            <div class="product-card">
+                <a href="./product/product26.html" class="product-link">
+                <img src="./image/st2.png" alt="Samsung 980 NVMe M.2 SSD 500GB">
+                <h3>Samsung 980 NVMe M.2 SSD 500GB</h3>
+                <p>- Storager -</p>
+                <p class="price">18,500 LKR</p>
+                <div class="status in-stock">In Stock</div>
+                </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'Samsung 980 NVMe M.2 SSD 500GB', 18500)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('Samsung 980 NVMe M.2 SSD 500GB', './image/st2.png', 18500, this)">❤ Favorite</button>
+      </div>
+    </div>
+    
+            <!-- Product 5.3-->
+            <div class="product-card">
+                <a href="./product/product27.html" class="product-link">
+                <img src="./image/st3.png" alt="SAMSUNG STORAGE 870 EVO 1TB">
+                <h3>SAMSUNG STORAGE 870 EVO 1TB</h3>
+                <p>- Storage -</p>
+                <p class="price">25,000 LKR</p>
+                <div class="status in-stock">In Stock</div>
+                </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'SAMSUNG STORAGE 870 EVO 1TB', 25000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('SAMSUNG STORAGE 870 EVO 1TB', './image/st3.png', 25000, this)">❤ Favorite</button>
+      </div>
+    </div>
+   </div>
+
+    <div class="product-section">
+        <!-- Product 5.4 -->
+        <div class="product-card">
+            <a href="./product/product27.html" class="product-link">
+            <img src="./image/st4.png" alt="Western Digital CAVIAR Blue 7200rpm 1TB">
+            <h3>Western Digital CAVIAR Blue 7200rpm 1TB</h3>
+            <p>- Storage -</p>
+            <p class="price">19,500 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'Western Digital CAVIAR Blue 7200rpm 1TB', 19500)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('Western Digital CAVIAR Blue 7200rpm 1TB', './image/st4.png', 19500, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+        <!-- Product 5.5 -->
+        <div class="product-card">
+            <a href="./product/product27.html" class="product-link">
+            <img src="./image/st5.png" alt="Lexar NM620 M.2 Gen3x4 NVMe 2TB">
+            <h3>Lexar NM620 M.2 Gen3x4 NVMe 2TB</h3>
+            <p>- Storage -</p>
+            <p class="price">32,000 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'Lexar NM620 M.2 Gen3x4 NVMe 2TB', 32000)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('Lexar NM620 M.2 Gen3x4 NVMe 2TB', './image/st5.png', 32000, this)">❤ Favorite</button>
+      </div>
+    </div>
+
+        <!-- Product 5.6 -->
+        <div class="product-card">
+            <a href="./product/product27.html" class="product-link">
+            <img src="./image/st6.png" alt="Addlink S20 SATA SSD 3D NAND 2.5 inch 256GB">
+            <h3>Addlink S20 SATA SSD 3D NAND 2.5 inch 256GB</h3>
+            <p>- Storage -</p>
+            <p class="price">7,500 LKR</p>
+            <div class="status in-stock">In Stock</div>
+            </a>
+      <div class="button-group">
+        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'Addlink S20 SATA SSD 3D NAND 2.5 inch 256GB', 7500)">Add to Cart</button>
+        <div class="quantity-controls">
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+          <input type="text" class="qty-input" value="1" readonly>
+          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="favorite-group">
+        <button class="favorite-btn" onclick="event.stopPropagation(); toggleFavorite('Addlink S20 SATA SSD 3D NAND 2.5 inch 256GB', './image/st6.png', 7500, this)">❤ Favorite</button>
+      </div>
+    </div>
+  </div>
+
+
+     <footer>
+        <div class="footer-container">
+            <!-- Contact Information -->
+            <div class="footer-contact">
+
+                <p><i class="fa fa-phone"></i> +94 77 744 1420</p>
+                <p><i class="fa fa-envelope"></i> gaming4world@gmail.com</p>
+                <p><i class="fa fa-globe"></i> <a href="https://ganidusasmitha.github.io/gaming4world/About%20us.html" target="_blank">www.gaming4world.com</a></p>
+            </div>
+    
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="./image/logo 1.png" alt="Gaming 4 world Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Java/cart.js" defer></script>
+    <script src="./Java/favorite.js"></script>
+
+</body>
+</html>

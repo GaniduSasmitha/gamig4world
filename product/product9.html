@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOTAC GAMING GeForce RTX 5070 TI AMP</title>
+    <link rel="stylesheet" href="../CSS/product.css"> <!-- Connect the external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Products</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About us.html">About</a></li>
+                <li><a href="../games.html">Games</a></li>
+                <li><a href="../upcoming.html">Upcoming</a></li>
+                <li><a href="../consoles.html">Consoles</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Cart Icon -->
+        <a href="../cart.html">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </a>
+
+        <a href="../favorite.html">
+            <div class="favorites-icon">
+              <i class="fas fa-heart"></i>
+              <span id="favorites-count">0</span>
+            </div>
+          </a>
+    </header>
+    
+    <main>
+        <!-- PRODUCT DISPLAY SECTION -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../image/gra3.png" alt="ZOTAC GAMING GeForce RTX 5070 TI AMP">
+                <div class="product-info">
+                    <p class="price">372,000 LKR</p>
+                    <div class="button-group">
+                        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'ZOTAC GAMING GeForce RTX 5070 TI AMP', 372000)">Add to Cart</button>
+                        <div class="quantity-controls">
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+                          <input type="text" class="qty-input" value="1" readonly>
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h2>ZOTAC GAMING GeForce RTX 5070 TI AMP</h2>
+                <p class="category">Category: Graphic Card</p>
+                <p class="availability">Availability: <span class="out-of-stock">Out of Stock</span></p>
+                <p><strong>Brand:</strong> Zontac</p>
+                <p><strong>What's Included:</strong></p>
+                <ul>
+                     <li>Powered by the NVIDIA Blackwell architecture and DLSS 4</li>
+                     <li>The ultimate ZOTAC GAMING GPU</li>
+                     <li>Infinity Mirror Design</li>
+                     <li>IceStorm 3.0 Advanced Cooling</li>
+                     <li>Larger Vapor Chamber</li>
+                     <li>BladeLink Fans</li>
+                     <li>FREEZE Fan Stop, Active Fan Control, Dual BIOSv</li>
+                     <li>SPECTRA 2.0 RGB Lighting</li>
+                     <li> SPECTRA LINK Lighting Sync port</li>
+                     <li>Metal die-cast Backplate</li>
+                     <li>Bundled with GPU Support Bracket</li>
+                     <li>12V-2x6 Safety Light</li>
+                </ul>
+                <p><strong>Warranty:</strong> 3 Year</p>
+
+                <p class="description">
+                    The ZOTAC GAMING GeForce RTX™ 5070 Ti AMP Extreme INFINITY offers 
+                    a completely revamped gaming experience with a whole new approach to 
+                    Graphics Card design, featuring NVIDIA's cutting-edge Blackwell architecture 
+                    and features such as DLSS 4. With an elegant design punctuated by a gorgeous 
+                    infinity mirror in the front, a reinforced mid-frame, and a vapor chamber larger 
+                    than its predecessor, the AMP Extreme INFINITY gives you infinite possibilities 
+                    for gaming, or applications beyond.
+                </p>
+            </div>
+        </div>
+        <!-- END OF PRODUCT DISPLAY SECTION -->
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><i class="fa fa-phone"></i> +94 77 744 1420</p>
+                <p><i class="fa fa-envelope"></i> gaming4world@gmail.com</p>
+                <p><i class="fa fa-globe"></i> <a href="https://ganidusasmitha.github.io/gaming4world/About%20us.html" target="_blank">www.gaming4world.com</a></p>
+            </div>
+            <div class="footer-logo">
+                <img src="../image/logo 1.png" alt="Gaming 4 World Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Java/cart.js" defer></script>
+    <script src="../Java/favorite.js"></script>
+</body>
+</html>
