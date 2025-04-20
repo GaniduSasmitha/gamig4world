@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORSAIR DOMINATOR TITANIUM RGB 64GB</title>
+    <link rel="stylesheet" href="../CSS/product.css"> <!-- Connect the external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Products</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About us.html">About</a></li>
+                <li><a href="../games.html">Games</a></li>
+                <li><a href="../upcoming.html">Upcoming</a></li>
+                <li><a href="../consoles.html">Consoles</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Cart Icon -->
+        <a href="../cart.html">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </a>
+
+        <a href="../favorite.html">
+            <div class="favorites-icon">
+              <i class="fas fa-heart"></i>
+              <span id="favorites-count">0</span>
+            </div>
+          </a>
+    </header>
+    
+    <main>
+        <!-- PRODUCT DISPLAY SECTION -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../image/me1.png" alt="CORSAIR DOMINATOR TITANIUM RGB 64GB">
+                <div class="product-info">
+                    <p class="price">105,000 LKR</p>
+                    <div class="button-group">
+                        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'CORSAIR DOMINATOR TITANIUM RGB 64GB', 105000)">Add to Cart</button>
+                        <div class="quantity-controls">
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+                          <input type="text" class="qty-input" value="1" readonly>
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h2>CORSAIR DOMINATOR TITANIUM RGB 64GB</h2>
+                <p class="category">Category: Memory</p>
+                <p class="availability">Availability: <span class="out-of-stock">Out of Stock</span></p>
+                <p><strong>Brand:</strong> DOMINATOR </p>
+                <p><strong>What's Included:</strong></p>
+                <ul>
+                     <li>Available KIT :  64GB : CMP64GX5M2B6400C32</li>  
+                        <li>Part Number 32GB : CMP32GX5M2B6400C32</li>   
+                        <li>64GB : CMP64GX5M2B6400C32</li>      
+                        <li>Heat Spreader: Aluminum</li>  
+                        <li>LED Lighting: RGB</li>  
+                        <li>Memory Series: DOMINATOR TITANIUM</li>  
+                        <li>Memory Size: 32GB / 64GB</li>  
+                        <li>Performance Profile	XMP 3.0</li>  
+                        <li>SPD Speed: 4800MHz</li>  
+                        <li> Tested Latency	32-40-40-84</li>  
+                        <li> Tested Speed (Up To) 6400</li>  
+                        <li>Fan Included: No</li>  
+                        <li>Memory Color: BLACK</li>  
+                        <li>Memory Compatibility Intel 600 Series,Intel 700 </li>  
+                        <li>Memory Detail Compatibility Intel 600 Series,Intel</li>  
+                        <li>Memory Type	DDR5</li>  
+                        <li>Package Memory Format	DIMM</li>  
+                        <li>Package Memory Pin	288</li>  
+                        <li>SPD Latency	40-40-40-77</li>  
+                        <li>SPD Voltage	1.1V</li>  
+                        <li>Tested Voltage: 1.40V</li>  
+                        <li>Weight: 0.335</li>  
+                        <li>Power Draw</li>  	
+                        <li>Overclock PMIC</li>  
+                </ul>
+                <p><strong>Warranty:</strong> 10 Year</p>
+
+                <p class="description">
+                    Set your memory to its rated speed in seconds, 
+                    via a single setting. Customize and save your own XMP
+                     profiles via iCUE to maximize performance by application or task for greater efficiency.
+                </p>
+            </div>
+        </div>
+        <!-- END OF PRODUCT DISPLAY SECTION -->
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><i class="fa fa-phone"></i> +94 77 744 1420</p>
+                <p><i class="fa fa-envelope"></i> gaming4world@gmail.com</p>
+                <p><i class="fa fa-globe"></i> <a href="https://ganidusasmitha.github.io/gaming4world/About%20us.html" target="_blank">www.gaming4world.com</a></p>
+            </div>
+            <div class="footer-logo">
+                <img src="../image/logo 1.png" alt="Gaming 4 World Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Java/cart.js" defer></script>
+    <script src="../Java/favorite.js"></script>
+</body>
+</html>

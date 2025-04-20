@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 4rem;
+    color: #de8006;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    padding: 30px;
+    font-size: x-large;
+}
+
+/* General Styles for Sections */
+.content-section {
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Image Styling */
+.content-image {
+    flex: 1;
+    margin: 10px;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Content Styling */
+.content-text {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.content-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+.images-section {
+    margin: 40px 0;
+}
+
+.images-section h2 {
+    margin-bottom: 20px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.images-container img {
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-button .btn {
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.image-description {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+    max-width: 80%;
+    margin: 10px auto 20px;
+}
+
+.contact-button .btn:hover {
+    background-color: #0056b3;
+}
+/* Footer Styling */
+footer {
+    background-color: #2d2c2c; /* Gray background */
+    padding: 10px ;
+    font-family: Arial, sans-serif;
+    color: #f7f2f2;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contact p {
+    margin: 8px 0;
+    font-size:20x;
+}
+
+.footer-logo img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+
+    /* Header */
+    header h1 {
+        font-size: 1.5rem; 
+        padding-top: 10px;
+    }
+
+    nav ul {
+        justify-content: space-around; 
+        padding: 5px 0; 
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Decrease margin between items */
+    }
+
+    nav ul li a {
+        font-size: 0.7rem; 
+    }
+
+    main {
+        font-size: small;
+    }
+
+    /* Responsive Design*/
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .content-text {
+        text-align: center;
+
+    }
+
+    .content-text p {
+        font-size: small;
+    }
+
+    .content-text h2 {
+        font-size: small;
+    }
+    
+    .image-description{
+        font-size: small;
+    }
+
+    /* Footer adjustments */
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack footer content vertically */
+        align-items: center;
+        gap: 10px; /* Add spacing between elements */
+    }
+
+    .footer-contact p {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .footer-logo img {
+        max-width: 150px; /* Reduce logo size for mobile */
+    }
+}
+
+

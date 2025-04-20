@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLORFUL CVN Z790D5</title>
+    <link rel="stylesheet" href="../CSS/product.css"> <!-- Connect the external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Products</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About us.html">About</a></li>
+                <li><a href="../games.html">Games</a></li>
+                <li><a href="../upcoming.html">Upcoming</a></li>
+                <li><a href="../consoles.html">Consoles</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Cart Icon -->
+        <a href="../cart.html">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </a>
+
+        <a href="../favorite.html">
+            <div class="favorites-icon">
+              <i class="fas fa-heart"></i>
+              <span id="favorites-count">0</span>
+            </div>
+          </a>
+    </header>
+    
+    <main>
+        <!-- PRODUCT DISPLAY SECTION -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../image/mo2.png" alt="COLORFUL CVN Z790D5">
+                <div class="product-info">
+                    <p class="price">69,000 LKR</p>
+                    <div class="button-group">
+                        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'COLORFUL CVN Z790D5', 69000)">Add to Cart</button>
+                        <div class="quantity-controls">
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+                          <input type="text" class="qty-input" value="1" readonly>
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h2>COLORFUL CVN Z790D5</h2>
+                <p class="category">Category: Motherboads</p>
+                <p class="availability">Availability: <span class="in-stock">In Stock</span></p>
+                <p><strong>Brand:</strong> CVN</p>
+                <p><strong>What's Included:</strong></p>
+                <ul>
+                     <li>CVN series customized frost cooling armor</li>
+                        <li>PCIe slot custom metal armor</li>
+                        <li>16+1+1 phase digital power supply design (Dr MOS 55A)</li>
+                        <li>Provides 4 PCIe 4.0 x4 M.2 SSD slots</li>
+                        <li>Provide one USB 3.2 Gen 2x2 20Gbps Type-C and one USB 3.2 Gen 2 10Gbps Type-A high-speed rear interface</li>
+                        <li>Board I/O Rear I/O:</li>
+                        - 1×USB 3.2 Gen 2x2 Type-C interface
+                        - 1×USB 3.2 Gen 2 Type-A interface
+                        - 4×USB 3.2 Gen 1 Type-A interfaces
+                        - 2×USB 2.0 interfaces
+                        - 1×DP 1.2 interface, supporting a maximum resolution of 4K 60Hz
+                        - 1×HDMI 2.0 interface, supporting up to 4K 60Hz resolution
+                        - 1×2.5G network interface
+                        - 6×audio interfaces
+                        - 2×WiFi 6 antenna interfaces
+                        - 1×BIOS update key
+                        <li></li>On board:</li>
+                        - 2×USB 2.0 pins
+                        - 1×USB 3.2 Gen 1 pin
+                        - 1×USB 3.2 Gen 1 Type-C slot
+                        - 1×CPU fan pin
+                        - 3×system fan pins
+                </ul>
+                <p><strong>Warranty:</strong> 3 Year</p>
+
+                <p class="description">
+                    Equipped with Realtek 2.5G high-speed wired network card
+                    Support the iGame Center light efficiency control software, which can synchronously adjust the light efficiency of the radiator, cooling fan and memory
+                    The I/O panel supports one-key BIOS upgrade
+                    Equipped with CNVI WiFi/BT slot, supporting extended WiFi module
+                    Six protection technologies, more stable product operation
+                    200 processes are strictly tested with guaranteed quality
+                    PCB atomization process comprehensively upgraded
+                    "410" high-quality service and guaranteed after-sales service
+                </p>
+            </div>
+        </div>
+        <!-- END OF PRODUCT DISPLAY SECTION -->
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><i class="fa fa-phone"></i> +94 77 744 1420</p>
+                <p><i class="fa fa-envelope"></i> gaming4world@gmail.com</p>
+                <p><i class="fa fa-globe"></i> <a href="https://ganidusasmitha.github.io/gaming4world/About%20us.html" target="_blank">www.gaming4world.com</a></p>
+            </div>
+            <div class="footer-logo">
+                <img src="../image/logo 1.png" alt="Gaming 4 World Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Java/cart.js" defer></script>
+    <script src="../Java/favorite.js"></script>
+</body>
+</html>

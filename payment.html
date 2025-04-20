@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="./CSS/cart.css">
+    <style>
+        .payment-container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h2{
+            color: black;
+        }
+
+        .payment-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .payment-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px;
+            border-radius: 10px;
+            border: 1px solid #aaa;
+        }
+        .payment-btn {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .payment-btn:hover {
+            background-color: #218838;
+        }
+
+        /* ... existing styles ... */
+
+    @media (max-width: 480px) {
+        body {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .payment-container {
+            margin: 20px 10px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .payment-container h2 {
+            font-size: 20px;
+        }
+
+        .payment-container input {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .payment-btn {
+            padding: 10px;
+            font-size: 15px;
+        }
+    }
+    </style>
+</head>
+<body>
+
+<div class="payment-container">
+    <h2>Payment Information</h2>
+    <form id="payment-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Card Number" required />
+        <input type="text" placeholder="Contact Number" required />
+        <input type="text" placeholder="Address" required />
+        <input type="text" placeholder="Postal Code" required />
+        <input type="text" placeholder="MM/YY" required />
+        <input type="text" placeholder="CVV" required />
+        <button class="payment-btn" type="submit">Confirm Payment</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("payment-form").addEventListener("submit", function(e) {
+      e.preventDefault(); // Stop form from submitting normally
+  
+      const inputs = document.querySelectorAll("#payment-form input");
+  
+      // Get each value from the input fields
+      const fullName = inputs[0].value.trim();
+      const email = inputs[1].value.trim();
+      const cardNumber = inputs[2].value.trim();
+      const contactNumber = inputs[3].value.trim();
+      const address = inputs[4].value.trim();
+      const postalCode = inputs[5].value.trim();
+      const expiry = inputs[6].value.trim();
+      const cvv = inputs[7].value.trim();
+  
+      // Validation checks
+      if (!fullName || !email || !cardNumber || !contactNumber || !address || !postalCode || !expiry || !cvv) {
+        alert("Please fill in all the fields.");
+        return;
+      }
+  
+      if (!email.includes("@") || !email.includes(".")) {
+        alert("Invalid email address.");
+        return;
+      }
+  
+      if (cardNumber.length !== 16 || isNaN(cardNumber)) {
+        alert("Card number must be 16 digits.");
+        return;
+      }
+  
+      if (cvv.length !== 3 || isNaN(cvv)) {
+        alert("CVV must be 3 digits.");
+        return;
+      }
+  
+      if (!expiry.includes("/") || expiry.length !== 5) {
+        alert("Expiry must be in MM/YY format.");
+        return;
+      }
+  
+      if (isNaN(contactNumber) || contactNumber.length < 10) {
+        alert("Contact number must be valid.");
+        return;
+      }
+  
+      if (isNaN(postalCode)) {
+        alert("Postal code must be numbers only.");
+        return;
+      }
+  
+      // All validations passed
+      localStorage.removeItem("cart");
+  
+      alert("✅ Payment successful! Your order will be shipped in 3 days.");
+      window.location.href = "consoles.html";
+    });
+  </script>
+  
+  
+</body>
+</html>

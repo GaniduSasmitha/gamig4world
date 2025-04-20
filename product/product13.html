@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSI Z790 PROJECT ZERO</title>
+    <link rel="stylesheet" href="../CSS/product.css"> <!-- Connect the external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Products</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About us.html">About</a></li>
+                <li><a href="../games.html">Games</a></li>
+                <li><a href="../upcoming.html">Upcoming</a></li>
+                <li><a href="../consoles.html">Consoles</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Cart Icon -->
+        <a href="../cart.html">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </a>
+
+        <a href="../favorite.html">
+            <div class="favorites-icon">
+              <i class="fas fa-heart"></i>
+              <span id="favorites-count">0</span>
+            </div>
+          </a>
+    </header>
+    
+    <main>
+        <!-- PRODUCT DISPLAY SECTION -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../image/mo1.png" alt="MSI Z790 PROJECT ZERO">
+                <div class="product-info">
+                    <p class="price">119,000 LKR</p>
+                    <div class="button-group">
+                        <button class="add-to-cart" onclick="event.stopPropagation(); handleAddToCart(this, 'MSI Z790 PROJECT ZERO', 119000)">Add to Cart</button>
+                        <div class="quantity-controls">
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, -1)">−</button>
+                          <input type="text" class="qty-input" value="1" readonly>
+                          <button class="qty-btn" onclick="event.stopPropagation(); changeQty(this, 1)">+</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h2>MSI Z790 PROJECT ZERO</h2>
+                <p class="category">Category: Motherboads</p>
+                <p class="availability">Availability: <span class="in-stock">In Stock</span></p>
+                <p><strong>Brand:</strong> MSI</p>
+                <p><strong>What's Included:</strong></p>
+                <ul>
+                     <li>TModel Name Z790 PROJECT ZERO</li>
+                     <li>CPU Support Support Intel®</li>
+                     <li>Core™ 14th/ 13th/ 12th Gen Processors, Intel®</li>
+                     <li>Pentium®</li>
+                     <li>Gold and Celeron®</li>
+                     <li>Processors</li>
+                     <li>CPU Socket LGA 1700</li>
+                     <li>Z790 Chipset</li>
+                     <li>Expansion Slots 1x PCIe 5.0 x16 slot</li>
+                     <li>1x PCIe 4.0 x16 slot</li>
+                     <li>2x PCIe 3.0 x1 slots</li>
+                     <li> Interface Support 4K@60Hz as specified in HDMI™ 2.1, DisplayPort 1.4</li>
+                </ul>
+                <p><strong>Warranty:</strong> 3 Year</p>
+
+                <p class="description">
+                    The Z790 PROJECT ZERO features a unique back-connect design 
+                    that reduces the complexity of cable management, resulting in a neater and 
+                     aesthetically pleasing appearance for the system. It’s compatible with Intel 
+                     14th /13th/ 12th Processors, supports DDR5, and comes equipped with a 2.5G LAN and
+                      Wi-Fi 7 solution. This makes it an excellent choice among ATX motherboards.
+                </p>
+            </div>
+        </div>
+        <!-- END OF PRODUCT DISPLAY SECTION -->
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><i class="fa fa-phone"></i> +94 77 744 1420</p>
+                <p><i class="fa fa-envelope"></i> gaming4world@gmail.com</p>
+                <p><i class="fa fa-globe"></i> <a href="https://ganidusasmitha.github.io/gaming4world/About%20us.html" target="_blank">www.gaming4world.com</a></p>
+            </div>
+            <div class="footer-logo">
+                <img src="../image/logo 1.png" alt="Gaming 4 World Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Java/cart.js" defer></script>
+    <script src="../Java/favorite.js"></script>
+</body>
+</html>

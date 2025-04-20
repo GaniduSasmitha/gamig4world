@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    font-size: larger;
+}
+
+h1 {
+    text-align: center; 
+    margin-top: 0; /* Removes default top margin */
+    padding-top: 20px; 
+    font-family: Arial, sans-serif; 
+    font-size: 4rem; 
+    color: #ed7710e0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px ;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section {
+    margin-bottom: 30px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #0056b3;
+}
+
+.faq-item p {
+    padding: 10px;
+    background: #f1f1f1;
+    border-left: 3px solid #0056b3;
+}
+
+.form-section {
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #2d2c2c; 
+    padding: 10px ;
+    font-family: Arial, sans-serif;
+    color: #f7f2f2;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contact p {
+    margin: 8px 0;
+    font-size:20x;
+}
+
+.footer-logo img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+
+    /* Header */
+    header h1 {
+        font-size: 1.5rem; 
+        padding-top: 10px;
+    }
+
+    nav ul {
+        justify-content: space-around; /* Reduce spacing for nav items */
+        padding: 5px 0; 
+    }
+
+    nav ul li {
+        margin: 0 10px; 
+    }
+
+    nav ul li a {
+        font-size: 0.7rem; 
+    }
+
+    main h2 {
+        font-size: medium;
+    }
+
+    .form-section{
+        font-size: small;
+    }
+
+    /* Footer adjustments */
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .footer-container {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .footer-contact p {
+        font-size: 1rem; 
+    }
+
+    .footer-logo img {
+        max-width: 150px; 
+    }
+}
+
+
+
